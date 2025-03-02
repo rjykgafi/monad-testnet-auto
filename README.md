@@ -1,6 +1,6 @@
-## Monad Testnet
+## Monad Testnet Automation
 
-Welcome to Monad Testnet, this script will help you to be well positioned for future Testnet launch implementing multi
+Welcome to Monad Testnet Automation Tool, this script will help you to be well positioned for future Testnet launch implementing multi
 Testnet Apps Interactions, Protocols, Contract Deployment, etc... All possible stuff related to Monad
 
 ``` bash

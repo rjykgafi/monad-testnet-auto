@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "@faker-js/faker": "^9.5.0",
+    "@fingerprintjs/fingerprintjs": "^4.6.0",
+    "@kuru-labs/kuru-sdk": "^0.0.36",
+    "2captcha": "^3.0.5-2",
+    "axios": "^1.7.9",
+    "bestcaptchasolver": "^1.1.6",
+    "bestcaptchasolver-client": "^1.1.6",
+    "chalk": "^4.1.2",
+    "colors": "^1.4.0",
+    "console-clear": "^1.1.1",
+    "ethers": "^5.7.2",
+    "figlet": "^1.8.0",
+    "https-proxy-agent": "^7.0.6",
+    "inquirer": "^8.2.4",
+    "oauth-1.0a": "^2.2.6",
+    "puppeteer": "^24.2.1",
+    "readline-sync": "^1.4.10",
+    "socks-proxy-agent": "^8.0.5",
+    "solc": "^0.8.28",
+    "twitter-api-v2": "^1.20.1",
+    "uuid": "^11.1.0",
+    "winston": "^3.17.0"
+  },
+  "scripts": {
+    "start": "node utils/wallet_converter.js && node index.js"
+  }
+}

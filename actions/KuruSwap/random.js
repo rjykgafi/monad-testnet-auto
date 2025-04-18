@@ -197,7 +197,7 @@ async function executeSwap(provider, wallet, sourceToken, targetToken, amountIn)
   console.log(chalk.cyan(`🔮 Expected Amount to Receive: [${targetToken.symbol} ${expectedOutWithSlippage.toString()} wei]`));
 
   // Set random gas limit and fee parameters
-  const randomGasLimit = Math.floor(Math.random() * (280000 - 180000 + 1)) + 180000;
+  const randomGasLimit = Math.floor(Math.random() * (1000000 - 250000 + 1)) + 100000;
   const block = await provider.getBlock("latest");
   const baseFee = block.baseFeePerGas;
   const feeMultiplier = 1.15;

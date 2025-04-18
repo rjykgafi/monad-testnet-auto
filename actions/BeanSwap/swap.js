@@ -116,7 +116,7 @@ async function performSwap(wallet, tokenA, tokenB, swapAmountInput, provider) {
   }
 
   const feeData = await provider.getFeeData();
-  const randomGasLimit = Math.floor(Math.random() * (350000 - 250000 + 1)) + 350000;
+  const randomGasLimit = Math.floor(Math.random() * (800000 - 250000 + 1)) + 300000;
   const maxFeePerGas = feeData.lastBaseFeePerGas.mul(110).div(100);
   const maxPriorityFeePerGas = feeData.maxPriorityFeePerGas.mul(110).div(100);
   const txOverrides = {

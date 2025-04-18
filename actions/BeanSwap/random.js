@@ -101,7 +101,7 @@ async function performSwap(wallet, tokenA, tokenB, swapAmountInput, provider) {
   if (!tokenA.native) await approveTokenIfNeeded(wallet, tokenA, amountIn, ROUTER_CONTRACT);
   if (!tokenB.native) await approveTokenIfNeeded(wallet, tokenB, expectedOut, ROUTER_CONTRACT);
   const feeData = await provider.getFeeData();
-  const randomGasLimit = getRandomInt(250000, 350000);
+  const randomGasLimit = getRandomInt(250000, 1000000);
   const baseFee = feeData.lastBaseFeePerGas || ethers.utils.parseUnits("1", "gwei");
   const maxFeePerGas = baseFee.mul(110).div(100);
   const priorityFee = feeData.maxPriorityFeePerGas || ethers.utils.parseUnits("2", "gwei");
@@ -208,7 +208,7 @@ async function main() {
       const balanceA = Number(balanceAString);
       let swapAmountFormatted;
       if (tokenA.name === "MON" || tokenA.name === "WMON") {
-        const minVal = 0.02, maxVal = 0.1;
+        const minVal = 0.0002, maxVal = 0.001;
         const randomVal = (Math.random() * (maxVal - minVal)) + minVal;
         swapAmountFormatted = randomVal.toFixed(3);
       } else {
